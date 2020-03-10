@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> 
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script> 
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<title>My Website</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+
+<body>
+
+<div class="gallery">
+<div>
+<button class="btn  btn-primary btn-md left" ><</button>
+<button class="btn btn-primary btn-md right" >></button>
+</div>
+<div class="si" >
+<img class="si4" src="M.jpg" >
+<img class="si4"  src="google1.jpg" >
+<img class="si4" src="M.jpg" >
+<img class="si4"  src="google1.jpg" >
+<img class="si4"  src="M.jpg" >
+<img class="si4"  src="google1.jpg" >
+</div>
+
+</div>
+</body>
+
+<style type="text/css">
+
+.gallery {
+display:inline-block;
+padding:20px 0px;
+width:80%;
+overflow:;
+height:100px;
+white-space:nowrap;
+overflow:hidden;
+margin-left:45px;
+}
+.si{
+position:relative;
+transform-style:flat;
+
+transition:all 0.6s;
+}
+
+.si4{
+position:relative;
+width:33%;
+
+}
+.s1{
+padding-left:5px;
+z-index:"500";
+}
+
+.s2{
+padding-right:50px;
+z-index:"500";
+}
+.left{
+position:absolute;
+z-index:1000;
+top:30px;
+left:5px;
+}
+.right {
+position:absolute;
+top:30px;
+z-index:1000;
+right:-2px;
+
+}
+</style>
+
+
+<script >
+let r=document.querySelector(".right");
+let l=document.querySelector(".left");
+let imgs=document.querySelector(".si");
+let c=0;
+let y=0;
+r.addEventListener("click",function()
+{
+if(c>=0 && c<3){
+c++;
+y-=34;
+imgs.style.transform="translate("+y+"%)";
+}//if
+
+}
+)
+l.addEventListener("click",function()
+{
+if(c<=3 && c>0)
+{
+c--;
+y+=34;
+
+imgs.style.transform="translate("+y+"%)";
+}//if
+}
+)
+</script>
