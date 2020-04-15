@@ -11,6 +11,7 @@ Every Track has the Following metadata:
 9- Genre
 10- Front Cover
 
+
 how the database will be constructed:
 
 1- i will have a script will read all the Artist in all the files
