@@ -1,7 +1,7 @@
 body {
     background-color: #232323;
     margin-top: 35px;
-    margin-left: 200px;
+    margin-left: 170px;
     background-size: cover;
 }
 
@@ -113,18 +113,16 @@ body {
 }
 
 .music {
-    margin-left: 21px;
     margin-bottom: 140px;
 }
 
 .ula {
     margin-top: 80px;
     margin-bottom: 20px;
-    margin-left: 80px;
 }
 
 .lim {
-    margin-right: 230px;
+    /* margin-right: 205px; */
 }
 
 .lim a {
